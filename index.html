@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfaBot | Automatización Inteligente</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+   <header>
+    <img src="img/logo.png" alt="Logo ComfaBot" class="logo">
+    <h1>ComfaBot</h1>
+    <p>Automatización inteligente para la gestión empresarial</p>
+</header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#caso">Caso de aplicación</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Transformamos procesos con tecnología</h2>
+        <p>
+            Integramos inteligencia artificial y automatización robótica
+            de procesos para mejorar la gestión empresarial.
+        </p>
+        <a href="#servicios" class="boton-principal">Conoce nuestros servicios</a>
+    </section>
+
+    <section id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+        <p>
+            ComfaBot es un emprendimiento tecnológico académico enfocado
+            en desarrollar soluciones digitales para optimizar procesos
+            administrativos y documentales.
+        </p>
+    </section>
+
+    
+<section id="servicios">
+    <h2>Nuestros servicios</h2>
+    <img src="img/automatizacion.png" alt="Automatización inteligente" class="imagen-servicios">
+    <p>Soluciones tecnológicas para transformar la gestión empresarial.</p>
+
+    <div class="contenedor-servicios">
+
+        <div class="tarjeta">
+            <div class="icono">⚙️</div>
+            <h3>Automatización RPA</h3>
+            <p>Automatizamos tareas repetitivas mediante herramientas como UiPath, reduciendo tiempos y errores.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">🤖</div>
+            <h3>Inteligencia artificial</h3>
+            <p>Integramos soluciones inteligentes para procesar información y apoyar la toma de decisiones.</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">📁</div>
+            <h3>Gestión documental</h3>
+            <p>Optimizamos la descarga, organización y almacenamiento de documentos empresariales.</p>
+        </div>
+
+    </div>
+</section>
+
+
+    
+<section id="caso">
+    <h2>Solución tecnológica: Comfamiliar Risaralda</h2>
+
+    <p>
+        ComfaBot propone una solución que integra automatización RPA
+        e inteligencia artificial para optimizar la gestión de
+        certificados de afiliación.
+    </p>
+
+    <div class="flujo-automatizacion">
+
+        <div class="paso">
+            <span>1</span>
+            <h3>Consulta</h3>
+            <p>Identificación de los colaboradores y sus documentos.</p>
+        </div>
+
+        <div class="paso">
+            <span>2</span>
+            <h3>Descarga</h3>
+            <p>Obtención automática de los certificados de afiliación.</p>
+        </div>
+
+        <div class="paso">
+            <span>3</span>
+            <h3>Organización</h3>
+            <p>Clasificación de archivos en carpetas por identificación.</p>
+        </div>
+
+        <div class="paso">
+            <span>4</span>
+            <h3>Radicación</h3>
+            <p>Cargue de los certificados en la plataforma BrainManager.</p>
+        </div>
+
+    </div>
+
+    <div class="resultado">
+        <h3>Resultado esperado</h3>
+        <p>
+            Reducir actividades manuales, mejorar la organización
+            documental y facilitar el seguimiento de los certificados.
+        </p>
+    </div>
+</section>
+
+
+    
+<section id="contacto">
+    <h2>Contáctanos</h2>
+
+    <p>¿Quieres transformar los procesos de tu empresa? Escríbenos.</p>
+
+    <form id="formulario" onsubmit="enviarMensaje(event)">
+
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+        <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+
+        <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+
+    </form>
+</section>
+
+
+    <footer>
+        <p>© 2026 ComfaBot - Automatización inteligente</p>
+    </footer>
+    <button id="volverArriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ↑
+</button>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>

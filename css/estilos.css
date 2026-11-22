@@ -1,0 +1,370 @@
+
+/* CONFIGURACION GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f8f7;
+    color: #263746;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #102c3c;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #38c58b;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* MENU DE NAVEGACION */
+nav {
+    background-color: #ffffff;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #102c3c;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #21a875;
+}
+
+/* SECCIONES */
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #102c3c;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+/* INICIO */
+#inicio {
+    background: linear-gradient(135deg, #102c3c, #17634f);
+    color: white;
+    padding: 100px 10%;
+}
+
+#inicio h2 {
+    color: white;
+    font-size: 38px;
+}
+
+#inicio p {
+    font-size: 19px;
+}
+
+/* SERVICIOS */
+#servicios {
+    background-color: #ffffff;
+}
+
+#servicios h3 {
+    color: #15966b;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* CASO DE APLICACION */
+#caso {
+    background-color: #e5f3ed;
+}
+
+/* CONTACTO */
+#contacto {
+    background-color: #ffffff;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #102c3c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 700px) {
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    section {
+        padding: 45px 7%;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    #inicio h2 {
+        font-size: 29px;
+    }
+
+/* TARJETAS DE SERVICIOS */
+.contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 280px;
+    padding: 30px 22px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tarjeta h3 {
+    color: #15966b;
+    margin: 15px 0;
+}
+
+.tarjeta p {
+    font-size: 15px;
+}
+
+.icono {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+/* FLUJO DE AUTOMATIZACION */
+.flujo-automatizacion {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.paso {
+    background-color: white;
+    width: 220px;
+    padding: 25px 18px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-bottom: 4px solid #21a875;
+}
+
+.paso span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #15966b;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paso h3 {
+    color: #102c3c;
+    margin: 15px 0 10px;
+}
+
+.paso p {
+    font-size: 14px;
+}
+
+.resultado {
+    background-color: #102c3c;
+    color: white;
+    padding: 30px;
+    margin: 40px auto 0;
+    max-width: 800px;
+    border-radius: 15px;
+}
+
+.resultado h3 {
+    color: #38c58b;
+    margin-bottom: 10px;
+}
+
+
+/* FORMULARIO DE CONTACTO */
+#formulario {
+    max-width: 550px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario input,
+#formulario textarea {
+    padding: 15px;
+    border: 1px solid #d5dedb;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+#formulario input:focus,
+#formulario textarea:focus {
+    border-color: #15966b;
+}
+
+#formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#formulario button {
+    background-color: #15966b;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formulario button:hover {
+    background-color: #102c3c;
+}
+
+/* LOGO COMFABOT */
+.logo {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 5px;
+}
+/* MEJORAR LEGIBILIDAD DEL CASO DE APLICACION */
+#caso {
+    background-color: #e5f3ed;
+    color: #263746;
+}
+
+#caso h2 {
+    color: #102c3c;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#caso p {
+    color: #263746;
+    line-height: 1.8;
+}
+
+#caso .paso h3 {
+    color: #102c3c;
+}
+
+#caso .paso p {
+    color: #354b59;
+}
+
+#caso .resultado {
+    background-color: #102c3c;
+    color: #ffffff;
+}
+
+#caso .resultado h3,
+#caso .resultado p {
+    color: #ffffff;
+}
+
+.imagen-servicios {
+    width: 100%;
+    max-width: 500px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 25px auto;
+    display: block;
+}
+
+/* BOTON PRINCIPAL */
+.boton-principal {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background-color: #38c58b;
+    color: #102c3c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+/* BOTON VOLVER ARRIBA */
+#volverArriba {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #15966b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#volverArriba:hover {
+    background-color: #102c3c;
+}
+}
